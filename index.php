@@ -74,7 +74,6 @@ function berekenOmtrek($straal) {
     $omtrek = 2 * $pi * $straal;
     return round($omtrek, 1);
 }
-
 function berekenOppervlakte($straal) {
     $pi = 3.14159;
     $oppervlakte = $pi * pow($straal, 2);
@@ -92,7 +91,29 @@ echo "<br>";
 echo "De oppervlakte van een cirkel met straal 5 is: {$oppervlakte}";
 
 
+    //Opdracht 6
+$dollarToEuro = 0.93;
 
+$amountInDollars = 86.74;
+$amountInEuro = $amountInDollars * $dollarToEuro;
+
+echo "<br>";
+echo "$86,74 is gelijk aan " . number_format($amountInEuro, 2).  " Euro ";
+echo "<br>";
+
+
+
+
+
+//Opdracht 7
+function DerdemachtBerekenen($getal) {
+    return $getal * $getal * $getal;
+}
+
+for ($i = 1; $i <= 25; $i++){
+    $resultaat = DerdemachtBerekenen($i);
+    echo "{$i} x {$i} x {$i} = {$resultaat} <br>";
+}
 
 
 
